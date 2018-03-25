@@ -1,8 +1,8 @@
 {
   "name": "bs-todo",
   "version": "4.0.0",
-  "description": "A decentralized Todo app built on Blockstack",
-  "author": "Michael Stivala <michaelstivala@me.com>",
+  "description": "A decentralized tokenomics app built on Blockstack",
+  "author": "Fabrice DEPREZ <fdeprez@nomatope.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
