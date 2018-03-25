@@ -81,3 +81,4 @@ locahost:8888/auth?authRequest=eyJ0eXAiOiJKV1QiLCJhbGciOi...
 ```
 
 This will redirect you back to the browser to complete the signin flow. Now you have a full test environment ready to build Blockstack Apps.
+# dspack
