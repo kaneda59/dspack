@@ -1,4 +1,4 @@
-# Blockstack Todo App
+# Open Tokenomics App
 
 > A simple Vue.js Todo app built for the decentralized web.
 
@@ -27,7 +27,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 First follow the above steps to setup the `blockstack-todo` application.
 
-The `blockstack-todo` is easiest to develop against a [`regtest`](https://bitcoin.org/en/glossary/regression-test-mode) bitcoin environment. There are a [couple of ways](https://github.com/blockstack/blockstack-core/tree/master/integration_tests#getting-started-with-docker) to setup the environment, but the easiest is through the [`docker`](https://www.docker.com/what-docker) setup. To use it first [install Docker](https://docs.docker.com/engine/installation/) and `docker-compose` (comes with the `docker` install on MacOS and Windows, but is a separate install on linux: `apt-get install docker-compose`)
+The `Open Tokenomics` is easiest to develop against a [`regtest`](https://bitcoin.org/en/glossary/regression-test-mode) bitcoin environment. There are a [couple of ways](https://github.com/blockstack/blockstack-core/tree/master/integration_tests#getting-started-with-docker) to setup the environment, but the easiest is through the [`docker`](https://www.docker.com/what-docker) setup. To use it first [install Docker](https://docs.docker.com/engine/installation/) and `docker-compose` (comes with the `docker` install on MacOS and Windows, but is a separate install on linux: `apt-get install docker-compose`)
 
 To get started make sure you stop any running Blockstack applications:
 
@@ -45,13 +45,13 @@ The first time you run this command it will download the current stable docker i
 
 Once the images have downloaded containers will be created that run your regtest environment. You can see them by running `docker ps` in your terminal:
 
-- `blockstacktodos_blockstack-api_1` has:
+- `tokenomics_blockstack-api_1` has:
   * `bitcoind` node running in `regtest mode`
   * `blockstack-core` parses the `regtest` chain to build up the name database
   * Runs a `blockstack api` that is required for the `blockstack-browser`.
-- `blockstacktodos_blockstack-browser_1` has:
+- `tokenomics_blockstack-browser_1` has:
   * The `blockstack-browser` server
-- `blockstacktodos_cors-proxy_1`:
+- `tokenomics_cors-proxy_1`:
   * A [`CORS` proxy](https://www.npmjs.com/package/corsproxy)
 
 The easiest way to work the regtest environment is in Incognito or Private Browsing mode in your browser. Open a private browsing window to [`localhost:8888`](http://localhost:8888) and setup your browser. In the first modal be sure to click `Advanced Pairing Mode`. Input the API Password as `blockstack_integration_test_api_password`:
